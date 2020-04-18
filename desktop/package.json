@@ -1,0 +1,22 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./out-tsc/desktop/src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.2.3",
+    "tslint": "^6.1.1"
+  },
+  "devDependencies": {
+    "electron": "^6.0.8",
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.0"
+  }
+}
